@@ -1,1 +1,3 @@
-# react-upload-image-with-session-control
+# upload-image-with-session-control
+
+REACT + NODE + MONGO + MATERIAL UI + COMPONENT STYLES
