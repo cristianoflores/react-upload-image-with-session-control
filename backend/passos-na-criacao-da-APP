@@ -1,0 +1,40 @@
+
+--- CRIANDO AMBIENTE RAIZ DE DESENVOLVIMENTO ---
+* INSTALAR
+- NodeJS
+- MongoDB
+- Robo 3T / Mongo Composser
+- Insomnia / Postman
+
+* PROGRAMAS OPCIONAIS
+- Cmder (cmd mais dinâmico que permite várias configurações)
+- Docker (rodagem de banco de dados em maquina virtual)
+
+* LIBS OPCIONAIS
+- bcrypt - "yarn add bcrypt" (encriptador de senhas)
+- jsonwebtoken - "yarn add jsonwebtoken" (pacote offical do Node JS para JWT)
+
+* TIPS
+- MD5 Hash Generator - https://www.md5hashgenerator.com/ (para o hash único da aplicação)
+
+
+--- CRIANDO ESTRUTURA DE DESENVOLVIMENTO ---
+- Cria pasta onde será realizado o projeto
+- Na pasta do projeto, junto ao CMD utilza o comando "npm init -y" (monta a estrutura de dados do projeto em json)
+- YARN - (CASO JA TENHA INSTALADO -> DESCONSIDERE PQ É INSTALAÇÃO GLOBAL "-g") - "npm add -g yarn"
+    (gerenciamento de pacotes de instalação das dependencias com mais velocidade e dinamismo)
+- EXPRESS - "yarn add express" (micro framework que ajuda com rotas e views)
+    DOC --> http://expressjs.com/pt-br/api.html
+- NODEMON - "yarn add -D nodemon", -D é pra instalar como plugin de desenvolvimento 
+    (restarta automaticamente o servidor sempre q houver alteração);
+- Cria um script no package.json para facilitar o start do servidor ("dev": "nodemon server.js")
+    (roda o servidor usando o comando "yarn run dev")
+- CORS
+- MORGAN - "yarn add morgan" - Log de requisições HTTP
+- MONGOOSE - "yarn add mongoose" (ODM de bancos não relacionais com o MongoDB, ou seja, permite realizar 
+    todas as querys, cria conexão com o banco, acessa os models. TUDO POR JS)
+    (ORM - Object Relational Mapping / ODM - Object Document Mapping)
+- MULTER - "yarn add multer" - Middleware do Express para manipular requisições do tipo Multpart form
+    (Multpart form - requisições que podem trazer arquivos)
+    DOC --> https://github.com/expressjs/multer/blob/master/README.md
+- REQUIRE-DIR - "yarn add require-dir" (facilita os requires nos models, centralizando em um só require)
